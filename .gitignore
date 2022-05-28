@@ -27,6 +27,7 @@ replay_pid*
 .DS_Store
 .idea/
 .gradle/
+out/
 target/
 *.iml
 Thumbs.db
