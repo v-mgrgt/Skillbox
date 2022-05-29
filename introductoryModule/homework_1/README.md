@@ -1,4 +1,4 @@
-# Задание 1: System Information
+# Задание 1: SystemInformation
 
 ## Цель
 
