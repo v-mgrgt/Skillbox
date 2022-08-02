@@ -7,31 +7,35 @@ public class Arithmetic {
         this.var2 = var2;
     }
 
-    public void sum() {
-        System.out.printf("Сумма чисел %d и %d составляет %d" + System.lineSeparator(),
-                var1, var2, (long) var1 + var2);
+    public long sum() {
+        return (long) var1 + var2;
     }
 
-    public void mult() {
-        System.out.printf("Произведение чисел %d и %d составляет %d" + System.lineSeparator(),
-                var1, var2, (long) var1 * var2);
+    public long mult() {
+        return (long) var1 * var2;
     }
 
-    public void max() {
-        System.out.printf("Максимальное число - %d" + System.lineSeparator(),
-                Integer.max(var1, var2));
+    public int max() {
+        return Integer.max(var1, var2);
     }
 
-    public void min() {
-        System.out.printf("Минимальное число - %d" + System.lineSeparator(),
-                Integer.min(var1, var2));
+    public int min() {
+        return Integer.min(var1, var2);
     }
 
     public static void main(String[] args) {
-        Arithmetic arithmetic = new Arithmetic(Integer.MAX_VALUE, 259);
-        arithmetic.sum();
-        arithmetic.mult();
-        arithmetic.max();
-        arithmetic.min();
+        int var1 = Integer.MAX_VALUE;
+        int var2 = 259;
+
+        Arithmetic arithmetic = new Arithmetic(Integer.MAX_VALUE, var2);
+        long sum = arithmetic.sum();
+        long mult = arithmetic.mult();
+        int max = arithmetic.max();
+        int min = arithmetic.min();
+
+        System.out.printf("Сумма чисел %d и %d составляет %d" + System.lineSeparator(), var1, var2, sum);
+        System.out.printf("Произведение чисел %d и %d составляет %d" + System.lineSeparator(), var1, var2, mult);
+        System.out.printf("Максимальное число - %d" + System.lineSeparator(), max);
+        System.out.printf("Минимальное число - %d" + System.lineSeparator(), min);
     }
 }
