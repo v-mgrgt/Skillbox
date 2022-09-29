@@ -8,11 +8,11 @@ public class Elevator {
         this.maxFloor = maxFloor;
     }
 
-    public void moveUp() {
+    private void moveUp() {
         currentFloor += 1;
     }
 
-    public void moveDown() {
+    private void moveDown() {
         currentFloor -= 1;
     }
 

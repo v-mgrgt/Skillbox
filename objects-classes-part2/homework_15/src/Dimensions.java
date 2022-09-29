@@ -1,4 +1,4 @@
-public class Dimensions {
+public final class Dimensions {
     private final int width;
     private final int height;
     private final int length;
@@ -7,6 +7,18 @@ public class Dimensions {
         this.width = width;
         this.height = height;
         this.length = length;
+    }
+
+    public Dimensions setWidth(int width) {
+        return new Dimensions(width, height, length);
+    }
+
+    public Dimensions setHeight(int height) {
+        return new Dimensions(width, height, length);
+    }
+
+    public Dimensions setLength(int length) {
+        return new Dimensions(width, height, length);
     }
 
     public int getVolume() {

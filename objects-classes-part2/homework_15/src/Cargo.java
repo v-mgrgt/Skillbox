@@ -1,4 +1,4 @@
-public class Cargo {
+public final class Cargo {
     private final Dimensions dimensions;
     private final int weight;
     private final String deliveryAddress;

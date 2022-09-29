@@ -1,11 +1,15 @@
 public class Country {
-    private final String name;
+    private String name;
     private String capitalName;
     private double square;
     private int population;
     private boolean isSea;
 
     public Country(String name) {
+        this.name = name;
+    }
+
+    public void setName(String name) {
         this.name = name;
     }
 

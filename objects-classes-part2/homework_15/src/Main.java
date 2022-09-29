@@ -6,7 +6,9 @@ public class Main {
         System.out.println(initialCargo);
         System.out.println();
 
-        Dimensions dimensions1 = new Dimensions(40, 6, 200);
+        Dimensions dimensions1 = initialDimensions.setWidth(40)
+                .setHeight(6)
+                .setLength(200);
         Cargo cargo1 = initialCargo.setDimensions(dimensions1);
         System.out.println(initialCargo);
         System.out.println(cargo1);
