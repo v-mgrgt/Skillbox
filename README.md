@@ -6,3 +6,4 @@
 4. [Объекты и классы. Часть 1. Методы и классы](https://github.com/v-mgrgt/Skillbox/tree/main/objects-classes-part1)
 5. [Объекты и классы. Часть 2. Инкапсуляция](https://github.com/v-mgrgt/Skillbox/tree/main/objects-classes-part2)
 6. [Работа с MySQL в Java](https://github.com/v-mgrgt/Skillbox/tree/main/jdbc)
+7. [Многопоточность](https://github.com/v-mgrgt/Skillbox/tree/main/multithreading)
